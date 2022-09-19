@@ -3,6 +3,7 @@ import { StyleSheet, SafeAreaView, ScrollView } from "react-native";
 import EditScreenInfo from "../components/EditScreenInfo";
 import MapScreen from "../components/MapScreen";
 import { Text, View } from "../components/Themed";
+import { Button, Headline, Title } from "react-native-paper";
 import { RootTabScreenProps } from "../types";
 
 export default function TabOneScreen({
@@ -26,6 +27,28 @@ export default function TabOneScreen({
           darkColor="rgba(255,255,255,0.1)"
         />
         <MapScreen />
+        <Headline
+          style={{
+            margin: 15,
+          }}
+        >
+          色んなパーツをごちゃまぜ
+        </Headline>
+        <Title
+          style={{
+            margin: 15,
+          }}
+        >
+          タイトルだよ〜
+        </Title>
+        <Button
+          mode={"contained"}
+          style={{
+            margin: 30,
+          }}
+        >
+          containedなボタン
+        </Button>
         <View style={{ height: 200 }} />
       </ScrollView>
     </SafeAreaView>
